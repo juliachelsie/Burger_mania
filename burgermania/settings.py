@@ -30,8 +30,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['julia-chelsie-burger-mania.herokuapp.com', 'localhost']
-ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com']
 ALLOWED_HOSTS = ['julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com']
+ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com']
+
+ALLOWED_ORIGINS = [
+    'http://*8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com', 'https://*8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com']
+CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
 
 
 # Application definition
