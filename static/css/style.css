@@ -1,29 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&family=Road+Rage&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&family=Road+Rage&display=swap");
 
 #logo {
-
     margin-left: 0px;
     padding-right: 30px;
     box-sizing: border-box;
-    font-family: 'Road Rage', sans-serif;
+    font-family: "Road Rage", sans-serif;
     text-transform: capitalize;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     color: #eeecea;
     text-decoration: none;
     list-style-type: none;
     font-size: 30px;
     width: max-content;
-
 }
 
 #logo:hover {
     color: #e48935;
     text-decoration: none;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     list-style-type: none;
-
 }
 
 a:focus,
@@ -36,7 +31,6 @@ a:hover {
     color: #191919;
 }
 
-
 #burgertext {
     font-size: 100%;
     position: absolute;
@@ -45,7 +39,7 @@ a:hover {
     margin: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(25, 25, 25, .7);
+    background-color: rgba(25, 25, 25, 0.7);
 }
 
 #burgertext h2,
@@ -56,7 +50,7 @@ h3 {
 
 #about {
     width: 100%;
-    background-color: #332F2E;
+    background-color: #332f2e;
     padding-bottom: 35px;
     padding-top: 35px;
     box-shadow: 0 1px 2px #eeecea;
@@ -77,20 +71,16 @@ h3 {
     margin-right: auto;
     max-width: 700px;
     color: #eeecea;
-
 }
-
 
 nav {
     position: absolute;
-    background-color: #332F2E;
+    background-color: #332f2e;
     width: 100%;
     left: 0;
     box-shadow: 0 2px 2px #eeecea;
     display: none;
     top: 100%;
-
-
 }
 
 #nav-toggle:checked~nav {
@@ -109,7 +99,7 @@ nav {
 .nav-toggle-label:hover {
     color: #e48935;
     text-decoration: none;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 .list {
@@ -119,14 +109,12 @@ nav {
 .list:hover {
     color: #e48935;
     text-decoration: none;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
-
 
 html {
     font-size: 60%;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -134,7 +122,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
     display: flex;
-
 }
 
 #header {
@@ -150,19 +137,16 @@ body {
     background-color: #191919;
     letter-spacing: 3px;
     box-shadow: 0 1px 2px #eeecea;
-
 }
 
 #home {
     height: 750px;
     width: 100%;
-    background: url("../images/burger.jpg") no-repeat center center/cover;
+    background-image: url("static/burger.jpg") no-repeat center center/cover;
     position: relative;
     background-attachment: fixed;
     box-shadow: 0 1px 2px #eeecea;
 }
-
-
 
 #menu {
     color: #eeecea;
@@ -173,8 +157,7 @@ body {
 
 #menu a {
     color: #eeecea;
-    transition: all .3s linear;
-
+    transition: all 0.3s linear;
 }
 
 #menu a:hover {
@@ -191,14 +174,13 @@ body {
     padding-top: 30px;
     list-style-type: none;
     text-decoration: none;
-
 }
 
 .menulink {
     text-decoration: none;
     list-style-type: none;
     color: #eeecea;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     font-size: 17px;
 }
 
@@ -210,21 +192,19 @@ body {
     border-radius: 15%;
     font-size: 20px;
     padding: 0.5rem;
-    background-color: #332F2E;
+    background-color: #332f2e;
     border: none;
     margin-bottom: 2rem;
     margin-top: 2rem;
     color: #eeecea;
-
 }
 
 #bg-food {
-    background: url("../images/smokeyburger.png") no-repeat center center/cover;
+    background: url("/media/smokeyburger.png") no-repeat center center/cover;
 }
 
-
 #food {
-    background-color: rgba(25, 25, 25, .7);
+    background-color: rgba(25, 25, 25, 0.7);
     max-height: 100%;
     width: 100%;
     max-width: 100%;
@@ -246,7 +226,7 @@ body {
 .options {
     text-align: center;
     color: #e48935;
-    font-family: 'Road Rage', sans-serif;
+    font-family: "Road Rage", sans-serif;
     font-size: 60px;
 }
 
@@ -265,13 +245,13 @@ body {
     text-align: center;
     list-style-type: none;
     padding-left: 0px;
-    color: #eeecea
+    color: #eeecea;
 }
 
 #good-to-know h2 {
     text-align: center;
     color: #e48935;
-    font-family: 'Road Rage', sans-serif;
+    font-family: "Road Rage", sans-serif;
     font-size: 60px;
 }
 
@@ -286,7 +266,7 @@ body {
     color: #eeecea;
     text-decoration: none;
     font-size: 20px;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 .book-button:hover {
@@ -294,6 +274,14 @@ body {
     list-style-type: none;
     text-decoration: none;
     list-style-type: none;
+}
+
+.col-md-7 {
+    color: #332f2e;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 170px;
+    margin-left: 170px;
 }
 
 /* Footer */
@@ -315,9 +303,8 @@ body {
     margin-right: auto;
     max-width: 350px;
     font-size: 25px;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     padding-top: 15px;
-
 }
 
 #social-networks a {
@@ -327,12 +314,11 @@ body {
 
 #social-networks a:hover {
     color: #e48935;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 /* Media query: tablets and larger (768 and up) */
-@media screen and (min-width :768px) {
-
+@media screen and (min-width: 768px) {
     #logo {
         font-size: 60px;
         list-style-type: none;
@@ -364,7 +350,6 @@ body {
     }
 
     #burgericon {
-
         font-size: 6rem;
         color: #e48935;
         margin-right: auto;

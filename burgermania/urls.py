@@ -16,8 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from restaurant.views import get_index, get_book, get_menu, get_base
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('restaurant.urls'), name='restaurant_urls')
+    path('', get_index, name='get_index'),
+    path('', get_base, name='get_base'),
+    path('menu.html', get_menu, name='get_menu'),
+    path('book.html', get_book, name='get_book'),
+    path('index.html', get_index, name='get_index'),
+    path('reserve_table', include('restaurant.urls', namespace='reservation')),
+
+
 ]
