@@ -1,17 +1,15 @@
 {% extends 'restaurant/base.html' %} {% load static %} {% block content %} {%
 load crispy_forms_tags %}
 
-<div class="main-wrap">
+<div class="main-wrap" id="book-bg">
   <div class="cover_ 1 cover_sm">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-7">
           <h2 class="reservation-heading">Book Your Table Here!</h2>
           <div id="book-table">
-            <form>
-              {{ form }}
-              <button type="submit">book</button>
-            </form>
+            <form>{{ form }}</form>
+            <input type="submit" class="btn btn-success" value="submit" />
           </div>
         </div>
       </div>

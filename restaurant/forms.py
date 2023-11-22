@@ -4,15 +4,15 @@ from .models import Reservation
 
 class Reserve_table_form(forms.Form):
     model = Reservation
-    reserve_name = forms.CharField(label='Your Name')
-    reserve_email = forms.EmailField(label='Your Email')
-    reserve_phone = forms.IntegerField(label='Your Phone-number')
-    reserve_people = forms.IntegerField(label='How many are you')
-    reserve_date = forms.DateField(label='When do you want to visit?')
-    reserve_time = forms.TimeField(label='What time do you want to visit?')
-
-    # class Reserve_table_form(forms.ModelForm):
-    # class Meta:
-    # model = Reservation
-    # fields = ["name", "email", "phone_number",
-    # "number_of_people", "date", "time",]
+    Name = forms.CharField(widget=forms.TextInput(
+        attrs={'placeholder': 'Name', 'style': 'width: 300px;', 'class': 'form-control'}))
+    Email = forms.EmailField(widget=forms.EmailInput(
+        attrs={'placeholder': 'Email', 'style': 'width: 300px;', 'class': 'form-control'}))
+    reserve_phone = forms.IntegerField(widget=forms.TextInput(
+        attrs={'placeholder': 'Phone-number', 'style': 'width: 300px;', 'class': 'form-control'}))
+    number_of_people = forms.IntegerField(widget=forms.NumberInput(
+        attrs={'placeholder': 'Number of people', 'style': 'width: 300px;', 'class': 'form-control'}))
+    date = forms.DateField(widget=forms.DateInput(
+        attrs={'class': 'form-control', 'type': 'date', 'style': 'width: 300px;'}))
+    time = forms.TimeField(widget=forms.TimeInput(
+        attrs={'style': 'width: 300px;', 'class': 'form-control', 'type': 'time'}))
