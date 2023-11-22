@@ -25,7 +25,5 @@ urlpatterns = [
     path('menu.html', get_menu, name='get_menu'),
     path('book.html', get_book, name='get_book'),
     path('index.html', get_index, name='get_index'),
-    path('reserve_table', include('restaurant.urls', namespace='reservation')),
-
 
 ]
