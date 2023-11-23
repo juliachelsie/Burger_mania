@@ -3,7 +3,7 @@ from django.views import generic
 from .models import Reservation
 from django.shortcuts import render
 from .forms import Reserve_table_form
-from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 
 # Create your views here.
@@ -24,5 +24,5 @@ def get_book(request):
         form = Reserve_table_form(request.POST)
         if form.is_valid():
             form.save()
-            print('ok')
+            messages.success(request, 'Booking succesful!')
     return render(request, 'restaurant/book.html', {'form': Reserve_table_form})

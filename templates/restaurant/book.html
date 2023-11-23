@@ -1,5 +1,4 @@
-{% extends 'restaurant/base.html' %} {% load static %} {% block content %} {%
-load crispy_forms_tags %}
+{% extends 'restaurant/base.html' %} {% load static %} {% block content %}
 
 <section class="container-fluid" id="book-bg">
   <div class="main-wrap">
@@ -17,8 +16,19 @@ load crispy_forms_tags %}
               >
                 {% csrf_token %}
                 <table>
-                  {{ form }}
-                  <input type="submit" class="b1" value="Book" />
+                  {{ form }} {% if messages %} {% for message in messages %} {%
+                  if message.tags %}
+                  <script>
+                    alert("{{ message }}");
+                  </script>
+                  {% endfor %} {% endif %}
+                </table>
+                <table>
+                  <input
+                    type="submit"
+                    class="reserve-button"
+                    value="Book table!"
+                  />
                 </table>
               </form>
             </div>

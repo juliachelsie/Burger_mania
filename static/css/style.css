@@ -80,6 +80,7 @@ h3 {
     color: #eeecea;
 }
 
+/* Navbar */
 nav {
     position: absolute;
     background-color: #332f2e;
@@ -94,8 +95,13 @@ nav {
     display: block;
 }
 
-.nav-toggle-label {
-    font-size: 2rem;
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label fa-solid fa-bars {
+    color: #eeecea;
+    font-size: 2, 5rem;
     padding-right: 1rem;
 }
 
@@ -226,11 +232,6 @@ body {
     padding-right: 5%;
 }
 
-.fa-bars {
-    color: #eeecea;
-    font-size: 25px;
-}
-
 .options {
     text-align: center;
     color: #e48935;
@@ -289,7 +290,8 @@ body {
     font-size: 40px;
     text-align: center;
     margin-top: 170px;
-    margin-left: 170px;
+    /* margin-left: 170px; */
+    width: 100%;
 }
 
 /* Reservation page */
@@ -308,6 +310,7 @@ body {
     max-width: 100%;
     position: relative;
     min-height: 100vh;
+    box-shadow: 0 1px 2px #eeecea;
 }
 
 /* form */
@@ -339,6 +342,20 @@ label {
 
 #book-form {
     align-items: center;
+    color: #332f2e;
+}
+
+.reserve-button {
+    font-size: 25px;
+    transition: all 0.3s linear;
+    /*margin-left: 70px;*/
+}
+
+.reserve-button:hover {
+    color: #e48935;
+    list-style-type: none;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /* Google map */
@@ -401,10 +418,6 @@ label {
         text-decoration: none;
     }
 
-    #nav-toggle {
-        display: none;
-    }
-
     nav {
         display: block;
         position: relative;
@@ -415,6 +428,14 @@ label {
         font-size: 18px;
     }
 
+    #fa-bars {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
     #menu {
         display: flex;
         color: #eeecea;
@@ -423,10 +444,6 @@ label {
 
     #menu>li {
         padding-left: 2rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
     }
 
     #burgericon {
