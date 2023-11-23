@@ -20,7 +20,9 @@ def get_base(request):
 
 
 def get_book(request):
-    context = {}
-    form = Reserve_table_form()
-    context['form'] = form
-    return render(request, 'restaurant/book.html', context)
+    if request.POST:
+        form = Reserve_table_form(request.POST)
+        if form.is_valid():
+            form.save()
+            print('ok')
+    return render(request, 'restaurant/book.html', {'form': Reserve_table_form})
