@@ -70,15 +70,15 @@ Burger-Mania is a website for a restaurant in Gothenburg, Sweden. It will help c
 
 #### index.home
 
--[desktop](https://github.com/juliachelsie/Burger_mania/blob/main/static/index-lightboue.PNG)
+![desktop](https://github.com/juliachelsie/Burger_mania/blob/main/static/index-lightboue.PNG)
 
 #### menu.html
 
-[desktop](https://github.com/juliachelsie/Burger_mania/blob/main/static/menu-lighthouse.PNG)
+![desktop](https://github.com/juliachelsie/Burger_mania/blob/main/static/menu-lighthouse.PNG)
 
 #### book.a.table
 
-[desktop](https://github.com/juliachelsie/Burger_mania/blob/main/static/book_lighthouse.PNG)
+![desktop](https://github.com/juliachelsie/Burger_mania/blob/main/static/book_lighthouse.PNG)
 
 ## Deployment
 
