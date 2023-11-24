@@ -31,9 +31,9 @@ DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['julia-chelsie-burger-mania.herokuapp.com', 'localhost']
-ALLOWED_HOSTS = ['julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com']
-ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com', 
+    'julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com', 'julia-chelsie-burger-mania.herokuapp.com', 'localhost']
+
 
 ALLOWED_ORIGINS = [
     'http://*8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com', 'https://*8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com']
