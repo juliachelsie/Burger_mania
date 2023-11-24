@@ -27,12 +27,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com', 
-    'julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com', 'julia-chelsie-burger-mania.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com','julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com', 'julia-chelsie-burger-mania.herokuapp.com', 'localhost']
 
 
 ALLOWED_ORIGINS = [
