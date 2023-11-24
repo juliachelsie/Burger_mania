@@ -31,7 +31,8 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com','julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com', 'julia-chelsie-burger-mania.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-juliachelsie-burger-mani-nhx3j8o25i.us2.codeanyapp.com',
+                 'julia-chelsie-burger-mania-fad36b750ef4.herokuapp.com', 'julia-chelsie-burger-mania.herokuapp.com', 'localhost']
 
 
 ALLOWED_ORIGINS = [
@@ -136,9 +137,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
