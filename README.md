@@ -34,9 +34,13 @@ Burger-Mania is a website for a restaurant in Gothenburg, Sweden. It will help c
 - The user will be asked to submit their full name, email address, phonenumeer and specifies how many guests are coming and which date and time they want to book.
   ![Book A Table](https://github.com/juliachelsie/Burger_mania/blob/main/static/book_burger.PNG)
 
--**Booking Successful**
+- **Booking Successful**
 -When the user books a table a message with the text "Booking successfull appears.
 ![Message](https://github.com/juliachelsie/Burger_mania/blob/main/static/message_burger.PNG)
+
+- **Admin page**
+- The website has an admin-page where the admin can see the all the information of the bookings being made.
+![Admin-page](https://github.com/juliachelsie/Burger_mania/blob/main/static/admin_burger.PNG)
 
 ## Features left to implement
 
@@ -59,10 +63,10 @@ Burger-Mania is a website for a restaurant in Gothenburg, Sweden. It will help c
    No errors were returned when passing through the official[(Jigsaw) validator](https://github.com/juliachelsie/Burger_mania/blob/main/static/css_burger.PNG)
 
 - **HTML**
-- No error or warnings were returned when passing through the official (https://validator.w3.org/)
+- No error or warnings were returned when passing through the official [W3C validator](https://validator.w3.org/)
   
 - **Python**
-- No error or warnings were returned when passing through the PEP8 Python Validator(https://pep8ci.herokuapp.com/)
+- I have tested the code through PEP8 linter and confirmed that there are no problems or errors.
 
 ### Lighthouse
 
